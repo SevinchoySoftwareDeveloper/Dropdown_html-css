@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Karimova Sevinch">
+    <meta name="description" content="dasturlash bo'yicha  amaliy site">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon"
+    href="https://w7.pngwing.com/pngs/857/523/png-transparent-beach-rose-red-red-roses-leaf-floribunda-poster.png"
+    type="image/x-icon">
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="./drop.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Drop down</title>
+
+
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://fikiwiki.com/uploads/posts/2022-02/1645054968_25-fikiwiki-com-p-krasivie-kartinki-okeana-29.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    font-family: sans-serif;
+    width: 1170px;
+}
+
+.container{
+ max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  margin-top: 10% auto;
+}
+@media(max-width: 1200px){
+  .container{
+    max-width: 970px;
+  } 
+}
+@media(max-width: 992px){
+  .container{
+    max-width: 750px;
+  } 
+}
+@media(max-width: 767px){
+  .container{
+    max-width: none;
+  } 
+}
+
+.menu__bar {
+    /* background-color: rgb(0, 63, 3); */
+    text-align: center;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+.menu__bar::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+}
+
+
+.menu__bar ul {
+    display: inline-flex;
+    list-style-type: none;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.menu__bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 6px;
+    border-right: 2px solid #fff ;
+    border-bottom: 3px solid #dfdbd9ef; 
+    position: relative;
+   
+
+
+}
+
+.menu__bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu__bar>ul>li:hover{
+    background-color: #4dd722;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu__bar .fa {
+    margin-right: 8px;
+}
+.sub_menu1,
+.sub_menu2 {
+    display: none;
+
+}
+
+.menu__bar>ul>li:hover>.sub_menu1{
+    display: flex;
+    cursor: pointer;
+    color: #fff;
+
+}
+.menu__bar>ul>li:hover>.sub_menu1>ul{
+    display: block;
+    position: absolute;
+    background: rgb(0, 63, 3);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu__bar>ul>li:hover>.sub_menu1>ul {
+
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.menu__bar>ul>li:hover>.sub_menu1>ul>li {
+
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.sub_menu3,
+.sub_menu4 {
+    display: none;
+
+}
+
+.menu__bar>ul>li:hover>.sub_menu2 {
+    display: flex;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu__bar>ul>li:hover>.sub_menu2>ul {
+    display: block;
+    position: absolute;
+    background: rgb(0, 63, 3);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu__bar>ul>li:hover>.sub_menu2>ul {
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.menu__bar>ul>li:hover>.sub_menu2>ul>li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.sub_menu5,
+.sub_menu6 {
+    display: none;
+}
+
+.menu__bar>ul>li:hover>.sub_menu3 {
+    cursor: pointer;
+    display: flex;
+    color: #fff;
+}
+
+.menu__bar>ul>li:hover>.sub_menu3>ul {
+    display: block;
+    position: absolute;
+    background: rgb(0, 63, 3);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu__bar>ul>li:hover>.sub_menu3>ul {
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.menu__bar>ul>li:hover>.sub_menu3>ul>li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.sub_menu7 {
+    display: none;
+}
+
+.menu__bar>ul>li:hover>.sub_menu7 {
+    cursor: pointer;
+    display: flex;
+    color: #fff;
+}
+
+.menu__bar>ul>li:hover>.sub_menu4 {
+    cursor: pointer;
+    display: flex;
+    color: #fff;
+}
+
+.menu__bar>ul>li:hover>.sub_menu4>ul {
+    display: block;
+    position: absolute;
+    background: rgb(0, 63, 3);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu__bar>ul>li:hover>.sub_menu4>ul {
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.menu__bar>ul>li:hover>.sub_menu4>ul>li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu__bar>ul>li:hover>.sub_menu5 {
+    cursor: pointer;
+    display: flex;
+    color: #fff;
+}
+
+.menu__bar>ul>li:hover>.sub_menu5>ul {
+    display: block;
+    position: absolute;
+    background: rgb(0, 63, 3);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu__bar>ul>li:hover>.sub_menu5>ul {
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.menu__bar>ul>li:hover>.sub_menu5>ul>li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu__bar>ul>li:hover>.sub_menu6 {
+    cursor: pointer;
+    display: flex;
+    color: #fff;
+}
+
+.menu__bar>ul>li:hover>.sub_menu6>ul {
+
+    display: block;
+    position: absolute;
+    background: rgb(0, 63, 3);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu__bar>ul>li:hover>.sub_menu6>ul {
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.menu__bar>ul>li:hover>.sub_menu6>ul>li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu__bar>ul>li:hover>.sub_menu7>ul {
+    display: block;
+    position: absolute;
+    background: rgb(0, 63, 3);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu__bar>ul>li:hover>.sub_menu7>ul {
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.menu__bar>ul>li:hover>.sub_menu7>ul>li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.rang:hover{
+    height: 60px;
+}
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+<div class="container">
+            <div class="menu__bar">
+                    <ul class="active">
+                        <li a href="#"> <i class="fa fa-home"></i> Home </a>
+                            <div class=" sub  sub_menu1 ">
+                                <ul>
+                                    <li class="rang"><a href="#">Mission</a></li>
+                                    <li class="rang"><a href="#">Vision</a></li>
+                                    <li class="rang"><a href="#">Team</a></li>
+                                    <li class="rang"><a href="#">Mission</a></li>
+                                    <li class="rang"><a href="#">Vision</a></li>
+                                    <li class="rang"><a href="#">Team</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li a href="#"> <i class="fa fa-user"></i> About </a>
+                            <div class=" sub sub_menu2 ">
+                                <ul>
+                                    <li class="rang"><a href="#">Mission</a></li>
+                                    <li class="rang"><a href="#">Vision</a></li>
+                                    <li class="rang"><a href="#">Team</a></li>
+                                    <li class="rang"><a href="#">Mission</a></li>
+                                    <li class="rang"><a href="#">Vision</a></li>
+                                    <li class="rang"><a href="#">Team</a></li>
+                                </ul>
+
+
+                            </div>
+                        </li>
+                        <li a href="#"> <i class="fa fa-clone"></i> Service </a>
+                            <div class=" sub  sub_menu3">
+                                <ul>
+                                    <li class="rang"><a href="#">Mission</a></li>
+                                    <li class="rang"><a href="#">Vision</a></li>
+                                    <li class="rang"><a href="#">Team</a></li>
+                                    <li class="rang"><a href="#">Mission</a></li>
+                                    <li class="rang"><a href="#">Vision</a></li>
+                                    <li class="rang"><a href="#">Team</a></li>
+                                </ul>
+
+
+
+
+
+
+                            </div>
+                        </li>
+                        <li a href="#"> <i class="fa fa-users"></i> Clints </a>
+                            <div class=" sub sub_menu4">
+                                <ul>
+                                    <li class="rang"><a href="#">Mission</a></li>
+                                    <li class="rang"><a href="#">Vision</a></li>
+                                    <li class="rang"><a href="#">Team</a></li>
+                                    <li class="rang"><a href="#">Mission</a></li>
+                                    <li class="rang"><a href="#">Vision</a></li>
+                                    <li class="rang"><a href="#">Team</a></li>
+                                </ul>
+
+
+
+
+
+
+
+                            </div>
+                        </li>
+                        <li a href="#"> <i class="fa fa-inr"></i> investers </a>
+                            <div class=" sub sub_menu5 ">
+                                <ul>
+                                    <li class="rang"><a href="#">Mission</a></li>
+                                    <li class="rang"><a href="#">Vision</a></li>
+                                    <li class="rang"><a href="#">Team</a></li>
+                                    <li class="rang"><a href="#">Mission</a></li>
+                                    <li class="rang"><a href="#">Vision</a></li>
+                                    <li class="rang"><a href="#">Team</a></li>
+                                </ul>
+
+
+
+
+
+
+                            </div>
+                        </li>
+                        <li a href="#"> <i class="fa fa-edit"></i> Pricing </a>
+                            <div class=" sub sub_menu6">
+                                <ul>
+                                    <li class="rang"><a href="#">Mission</a></li>
+                                    <li class="rang"><a href="#">Vision</a></li>
+                                    <li class="rang"><a href="#">Team</a></li>
+                                    <li class="rang"><a href="#">Mission</a></li>
+                                    <li class="rang"><a href="#">Vision</a></li>
+                                    <li class="rang"><a href="#">Team</a></li>
+                                </ul>
+
+
+
+
+
+
+                            </div>
+                        </li>
+                        <li a href="#"> <i class="fa fa-phone"></i> Contact </a>
+                            <div class=" sub sub_menu7">
+                                <ul>
+                                    <li class="rang"><a href="#">Mission</a></li>
+                                    <li class="rang"><a href="#">Vision</a></li>
+                                    <li class="rang"><a href="#">Team</a></li>
+                                    <li class="rang"><a href="#">Mission</a></li>
+                                    <li class="rang"><a href="#">Vision</a></li>
+                                    <li class="rang"><a href="#">Team</a></li>
+                                </ul>
+
+
+
+
+
+
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+</div>
+
+
+
+
+</body>
+
+</html>

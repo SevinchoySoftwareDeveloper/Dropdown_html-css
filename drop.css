@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://fikiwiki.com/uploads/posts/2022-02/1645054968_25-fikiwiki-com-p-krasivie-kartinki-okeana-29.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  font-family: sans-serif;
+  min-width: 1170px;
+}
+.contener {
+  width: 1200px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+/* .contener{
+    min-width:1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}  */
+/* @media (max-width: 1200px) {
+  .contener {
+    max-width: 970px;
+    background-color: #4dd722;
+  }
+}
+@media (max-width: 992px) {
+  .contener {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .contener {
+    max-width: none;
+  }
+} */
+/* .menu__bar{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+@media(max-width:1200px){
+    .contener{
+        max-width:970px;
+    }
+}
+@media(max-width:992px){
+    .contener{
+        max-width:750px;
+    }
+}
+@media(max-width:767px){
+    .contener{
+        max-width:none;
+    }
+} */
+
+.menu__bar {
+  /* background-color: rgb(0, 63, 3); */
+  text-align: center;
+}
+
+.menu__bar ul {
+  display: inline-flex;
+  list-style-type: none;
+  color: #fff;
+}
+
+.menu__bar ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 6px;
+  border-right: 2px solid #d9d4d2ef;
+  border-bottom: 2px solid #9c9896e6;
+}
+
+.menu__bar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu__bar > ul > li:hover {
+  background-color: #4dd722;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.menu__bar .fa {
+  margin-right: 8px;
+}
+.sub_menu1,
+.sub_menu2 {
+  display: none;
+}
+
+.menu__bar > ul > li:hover > .sub_menu1 {
+  display: flex;
+  cursor: pointer;
+  color: #fff;
+}
+.menu__bar > ul > li:hover > .sub_menu1 > ul {
+  display: block;
+  position: absolute;
+  background: rgb(0, 63, 3);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.menu__bar > ul > li:hover > .sub_menu1 > ul {
+  display: block;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.menu__bar > ul > li:hover > .sub_menu1 > ul > li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.sub_menu3,
+.sub_menu4 {
+  display: none;
+}
+
+.menu__bar > ul > li:hover > .sub_menu2 {
+  display: flex;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu__bar > ul > li:hover > .sub_menu2 > ul {
+  display: block;
+  position: absolute;
+  background: rgb(0, 63, 3);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.menu__bar > ul > li:hover > .sub_menu2 > ul {
+  display: block;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.menu__bar > ul > li:hover > .sub_menu2 > ul > li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.sub_menu5,
+.sub_menu6 {
+  display: none;
+}
+
+.menu__bar > ul > li:hover > .sub_menu3 {
+  cursor: pointer;
+  display: flex;
+  color: #fff;
+}
+
+.menu__bar > ul > li:hover > .sub_menu3 > ul {
+  display: block;
+  position: absolute;
+  background: rgb(0, 63, 3);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.menu__bar > ul > li:hover > .sub_menu3 > ul {
+  display: block;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.menu__bar > ul > li:hover > .sub_menu3 > ul > li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.sub_menu7 {
+  display: none;
+}
+
+.menu__bar > ul > li:hover > .sub_menu7 {
+  cursor: pointer;
+  display: flex;
+  color: #fff;
+}
+
+.menu__bar > ul > li:hover > .sub_menu4 {
+  cursor: pointer;
+  display: flex;
+  color: #fff;
+}
+
+.menu__bar > ul > li:hover > .sub_menu4 > ul {
+  display: block;
+  position: absolute;
+  background: rgb(0, 63, 3);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.menu__bar > ul > li:hover > .sub_menu4 > ul {
+  display: block;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.menu__bar > ul > li:hover > .sub_menu4 > ul > li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.menu__bar > ul > li:hover > .sub_menu5 {
+  cursor: pointer;
+  display: flex;
+  color: #fff;
+}
+
+.menu__bar > ul > li:hover > .sub_menu5 > ul {
+  display: block;
+  position: absolute;
+  background: rgb(0, 63, 3);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.menu__bar > ul > li:hover > .sub_menu5 > ul {
+  display: block;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.menu__bar > ul > li:hover > .sub_menu5 > ul > li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.menu__bar > ul > li:hover > .sub_menu6 {
+  cursor: pointer;
+  display: flex;
+  color: #fff;
+}
+
+.menu__bar > ul > li:hover > .sub_menu6 > ul {
+  display: block;
+  position: absolute;
+  background: rgb(0, 63, 3);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.menu__bar > ul > li:hover > .sub_menu6 > ul {
+  display: block;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.menu__bar > ul > li:hover > .sub_menu6 > ul > li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.menu__bar > ul > li:hover > .sub_menu7 > ul {
+  display: block;
+  position: absolute;
+  background: rgb(0, 63, 3);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.menu__bar > ul > li:hover > .sub_menu7 > ul {
+  display: block;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.menu__bar > ul > li:hover > .sub_menu7 > ul > li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+.rang:hover {
+  height: 60px;
+}
